@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function test(fn){  //fn就等于test2了
+            var str = "hello";
+            fn(str);    // test2(str);
+            alert(str); //alert ?
+
+        }
+        function test2(str){
+            alert(str);   // alert ?
+            str = "world";
+        }
+        //调用test方法,参数为test2函数
+        test(test2);
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
